@@ -25,10 +25,10 @@ from src.datasets.WatermelonDataset import WatermelonDataset
 
 from clearml import Task, OutputModel
 
-task = Task.init(project_name="Thesis_ADD", task_name="Model Visualization 2")
+task = Task.init(project_name="Thesis_ADD", task_name="Model Visualization Final")
 
 # Upload model
-model_path = "./trained_models/model__specrnet__1727598654.3751512/ckpt.pth"
+model_path = "/kaggle/working/SpecRNet/trained_models/model__specrnet__1727798811.4811485/ckpt.pth"
 output_model = OutputModel(task=task)
 output_model.update_weights(weights_filename=model_path)
 
@@ -203,7 +203,7 @@ def parse_args():
     parser.add_argument("--cpu", "-c", help="Force using cpu", action="store_true")
 
     # Output directory for visualizations
-    parser.add_argument("--output_dir", type=str, default="/home/aquinoarjay/thesis/SpecRNet", help="Directory to save visualizations")
+    parser.add_argument("--output_dir", type=str, default="/kaggle/working/SpecRNet", help="Directory to save visualizations")
 
     return parser.parse_args()
 
