@@ -20,7 +20,7 @@ from clearml import Task, OutputModel
 task = Task.init(project_name="Thesis_ADD", task_name="Upload Model Checkpoint")
 
 # Upload model
-model_path = "./trained_models/model__specrnet__1727598654.3751512/ckpt.pth"
+model_path = "/kaggle/working/SpecRNet/trained_models/model__specrnet__1727798811.4811485/ckpt.pth"
 output_model = OutputModel(task=task)
 output_model.update_weights(weights_filename=model_path)
 
