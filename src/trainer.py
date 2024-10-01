@@ -57,14 +57,14 @@ class GDTrainer(Trainer):
             batch_size=self.batch_size,
             shuffle=True,
             drop_last=True,
-            num_workers=6,
+            num_workers=4,
         )
         test_loader = DataLoader(
             test,
             batch_size=self.batch_size,
             shuffle=True,
             drop_last=True,
-            num_workers=6,
+            num_workers=4,
         )
 
         criterion = torch.nn.BCEWithLogitsLoss()
