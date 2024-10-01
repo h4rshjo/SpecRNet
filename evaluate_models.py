@@ -73,7 +73,7 @@ def evaluate_nn(
         batch_size=batch_size,
         shuffle=True,
         drop_last=True,
-        num_workers=3,
+        num_workers=0,
     )
 
     batches_number = len(data_val) // batch_size
