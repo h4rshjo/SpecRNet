@@ -28,7 +28,7 @@ from clearml import Task, OutputModel
 task = Task.init(project_name="Thesis_ADD", task_name="Model Visualization Final")
 
 # Upload model
-model_path = "/kaggle/working/SpecRNet/trained_models/model__specrnet__1727798811.4811485/ckpt.pth"
+model_path = "/kaggle/working/SpecRNet/trained_models/model__specrnet__1727839033.1285093/ckpt.pth"
 output_model = OutputModel(task=task)
 output_model.update_weights(weights_filename=model_path)
 
@@ -195,7 +195,7 @@ def parse_args():
     IN_THE_WILD_DATASET_PATH = "./Bonafide_Dataset/train"
     parser.add_argument("--in_the_wild_path", type=str, default=IN_THE_WILD_DATASET_PATH)
     
-    default_model_config = "./configs/model__specrnet__1727598654.3751512.yaml"
+    default_model_config = "./configs/model__specrnet__1727839033.1285093.yaml"
     parser.add_argument("--config", type=str, default=default_model_config)
 
     default_amount = 25
