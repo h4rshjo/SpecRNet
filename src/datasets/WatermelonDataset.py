@@ -7,7 +7,7 @@ import pandas as pd
 from src.datasets.base_dataset import SimpleAudioFakeDataset
 
 DF_ASVSPOOF_SPLIT = {
-    "partition_ratio": [0.7, 0.15],
+    "partition_ratio": [0.85, 0.15],
     "seed": 45
 }
 
